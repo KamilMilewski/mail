@@ -27,7 +27,7 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 
@@ -57,7 +57,7 @@ Rails.application.configure do
     address: 'poczta.o2.pl',
     port: 587,
     domain: 'example.com',
-    username: ENV['username'],
+    user_name: ENV['username'],
     password: ENV['password'],
     authentication: 'plain',
     enable_starttls_auto: true
