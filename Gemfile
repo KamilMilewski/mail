@@ -25,6 +25,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#For managing environment variables
+#To set env variables on heroku
+###figaro heroku:set -e production
 gem 'figaro'
 
 # Use Capistrano for deployment
